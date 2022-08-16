@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Stream Setup Assistant</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="body-main">
+
+<header th:include="fragments/navigation"></header>
+<div class="container" style="height:100vh">
+    <div class="row rounded bg-white my-auto align-items-center">
+        <div class="column-left col-md-6 my-4 text-center">
+            <h2>ACCESS</h2>
+            <h3>Stream <span style="color: rgb(225,67,0)">Templates & Overlays</span></h3>
+            <h3>Complete <span style="color: rgb(255,76,0)">setting setup</span></h3>
+            <h3>Custom <span style="color: rgb(255,103,36)">RTMP</span> server</h3>
+            <h3><span style="color: rgb(255,111,50)">24/7</span> live support</h3>
+            <h3>Physical <span style="color: rgb(255,134,82)">setup recommendations</span></h3>
+        </div>
+
+        <div class="column-right col-md-6 my-4 text-center"><h3><span style="color:rgb(93,203,0)">$9,99</span> monthly</h3>
+                                                <h4> or </h4>
+                                                <h3><span style="color:rgb(93,203,0)">$99</span> annually</h3>
+            <a class="btn btn-primary my-3" sec:authorize="isAuthenticated()" href="/">
+                Get Started Now
+            </a>
+
+            <a class="btn btn-primary my-3" sec:authorize="!isAuthenticated()" href="/users/register">
+                Get Started Now
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
