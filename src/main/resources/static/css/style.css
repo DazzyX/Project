@@ -1,0 +1,25 @@
+body, html {
+    background-color: #e8e8e8;
+    min-height: 100%;
+}
+
+.btn-access {
+    width: 180px;
+    padding: 25px;
+    border: none;
+    border-radius: 40px;
+    background-color: #79f1ff;
+    /*background-image: linear-gradient(to bottom right, #ffffff, #d75050);*/
+    /*background-size: auto 10rem;*/
+    /*background-position: 10rem 5rem;*/
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-access:hover, .btn-access:active, .btn-access:focus {
+    background-color: #36ddff;
+}
